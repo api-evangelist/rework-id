@@ -1,0 +1,13 @@
+generated: '2026-10-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: rework.id
+  https: false
+domains:
+- domain: rework.id
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  spf: true
+  dmarc: false
